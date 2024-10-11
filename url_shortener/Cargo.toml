@@ -1,0 +1,11 @@
+[package]
+name = "url_shortener"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.7"
+rand = "0.8.5"
+serde = { version = "1.0.210", features = ["derive"] }
+sqlx = { version = "0.8.2", features = ["runtime-tokio", "sqlite"] }
+tokio = { version = "1.40.0", features = ["rt-multi-thread"] }
